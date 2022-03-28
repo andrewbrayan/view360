@@ -18,10 +18,6 @@ window.addEventListener("wheel", (event) => {
   zoom(event)
 });
 
-window.addEventListener("", (event) => {
-  console.log('hola');
-});
-
 function zoom(event) {
   const delta = Math.sign(event.wheelDelta)/10;
 
@@ -35,3 +31,7 @@ function zoom(event) {
 }
 
 console.log(AFRAME.utils.device.isMobile());
+
+function hola() {
+  document.getElementById('sky').setAttribute('src', '#oficinaFull1')
+}
