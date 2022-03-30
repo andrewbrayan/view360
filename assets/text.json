@@ -1,0 +1,11 @@
+{
+  "es": {
+    "oficinaFull": {
+      "aireAcondicionado": {
+        "titulo": "1 aire acondicionado </br> 12000 BTU",
+        "description": "Equipo BLUELINE R-410 MS-12 de 12.000 BTU </br> INVERTER SEER 16, ha sido fabricado para ser </br> instaldo en areas de 16 a 23 m<sup>2</sup>. En su interior </br> contiene un compresor rotativo de bajo índice </br> de ruido en su funcionamiento. Tiene un amplio </br> flujo de aire",
+        "card": "assets/card/cardAirCond.png"
+      }
+    }
+  }
+}

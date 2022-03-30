@@ -1,7 +1,12 @@
+var myModal = new bootstrap.Modal(document.getElementById("cardModal"), {
+  keyboard: false,
+});
+
 AFRAME.registerComponent("pick", {
   init: function () {
     this.el.addEventListener("click", () => {
-      document.querySelector("#infoPanel").setAttribute("visible", "true");
+      setInfoCard(this.el.getAttribute("infoCard"), this.el.getAttribute("panorama"))      
+      myModal.show();
     });
   },
 });
@@ -9,17 +14,17 @@ AFRAME.registerComponent("pick", {
 AFRAME.registerComponent("close", {
   init: function () {
     this.el.addEventListener("click", () => {
-      document.querySelector("#infoPanel").setAttribute("visible", "false");
+      myModal.hide();
     });
   },
 });
 
 window.addEventListener("wheel", (event) => {
-  zoom(event)
+  zoom(event);
 });
 
 function zoom(event) {
-  const delta = Math.sign(event.wheelDelta)/10;
+  const delta = Math.sign(event.wheelDelta) / 10;
 
   var myZoom = document.getElementById("camera").getAttribute("zoom");
   var finalZoom = parseFloat(myZoom) + delta;
@@ -30,8 +35,14 @@ function zoom(event) {
   document.getElementById("camera").setAttribute("zoom", finalZoom);
 }
 
-console.log(AFRAME.utils.device.isMobile());
-
-function hola() {
-  document.getElementById('sky').setAttribute('src', '#oficinaFull1')
+function setInfoCard(cardType, panorama) {
+  fetch("../assets/text.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((jsondata) => {
+      console.log(AFRAME.utils.device.isMobile());      
+      document.getElementById("cardTitle").innerHTML = jsondata.es[panorama][cardType].titulo
+      document.getElementById("cardDescription").innerHTML = jsondata.es[panorama][cardType].description
+    });
 }

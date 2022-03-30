@@ -1,0 +1,31 @@
+@font-face {
+    font-family: TTSupermolotNeue-Bold;
+    src: url(../assets/font/TTSupermolotNeue-Bold.ttf);
+}
+
+@font-face {
+    font-family: TTSupermolotNeue-DemiBold;
+    src: url(../assets/font/TTSupermolotNeue-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: TTSupermolotNeue-Medium;
+    src: url(../assets/font/TTSupermolotNeue-Medium.ttf);
+}
+
+.TTSupermolotNeue-Bold {
+    font-family: TTSupermolotNeue-Bold;
+}
+
+.TTSupermolotNeue-DemiBold {
+    font-family: TTSupermolotNeue-DemiBold;
+}
+
+.TTSupermolotNeue-Medium {
+    font-family: TTSupermolotNeue-Medium;
+}
+
+.textDescription {
+    line-height: 1;
+    font-size: 15px;
+}
