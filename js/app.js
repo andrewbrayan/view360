@@ -1,11 +1,19 @@
+// se establece objeto para llamar el modal de bootstrap
 var myModal = new bootstrap.Modal(document.getElementById("cardModal"), {
-  keyboard: false,
+  keyboard: true,
 });
+
+// funcion de A-frame para la creacion de atributos personales.
+// se crea un atributo que permite llamar una funcion al dar click a cualquier
+// objeto con el atributo "pick"
 
 AFRAME.registerComponent("pick", {
   init: function () {
     this.el.addEventListener("click", () => {
-      setInfoCard(this.el.getAttribute("infoCard"), this.el.getAttribute("panorama"))      
+      setInfoCard(
+        this.el.getAttribute("infoCard"),
+        this.el.getAttribute("panorama")
+      );
       myModal.show();
     });
   },
@@ -35,14 +43,21 @@ function zoom(event) {
   document.getElementById("camera").setAttribute("zoom", finalZoom);
 }
 
+// funcion para obtener data de Json
 function setInfoCard(cardType, panorama) {
+  codeAlpha = "en";
   fetch("../assets/text.json")
     .then((response) => {
       return response.json();
     })
     .then((jsondata) => {
-      console.log(AFRAME.utils.device.isMobile());      
-      document.getElementById("cardTitle").innerHTML = jsondata.es[panorama][cardType].titulo
-      document.getElementById("cardDescription").innerHTML = jsondata.es[panorama][cardType].description
+      console.log(AFRAME.utils.device.isMobile());
+      document.getElementById("cardTitle").innerHTML =
+        jsondata[codeAlpha][panorama][cardType].titulo;
+      document.getElementById("cardDescription").innerHTML =
+        jsondata[codeAlpha][panorama][cardType].description;
+      document
+        .getElementById("cardImg")
+        .setAttribute("src", jsondata.es[panorama][cardType].card);
     });
 }

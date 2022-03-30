@@ -25,7 +25,24 @@
     font-family: TTSupermolotNeue-Medium;
 }
 
-.textDescription {
-    line-height: 1;
+.modalCard {
+    max-width: 700px;
+    margin: auto;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text, h4 {
+    margin: 0 45px;
+    margin-bottom: 30px;
+}
+
+.text, p {
+    margin: 0 45px;
+    line-height: 1.3;
     font-size: 15px;
 }
