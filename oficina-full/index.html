@@ -113,9 +113,9 @@
           id="oficinaFull1"
         />
         <!-- recursos extras -->
-        <img src="../assets/extras/pickDown.png" id="pickDown" />
+        <img src="../assets/extras/pickDown.svg" id="pickDown" />
 
-        <img src="../assets/extras/pickUp.png" id="pickUp" />
+        <img src="../assets/extras/pickUp.svg" id="pickUp" />
       </a-assets>
 
       <!-- Seccion a-sky: se encarga de pintar la imagen en formato 360 -->
@@ -132,8 +132,8 @@
       <a-image
         class="raycast"
         src="#pickDown"
-        scale="0.7 0.7 0.7"
-        position="0.5 2.4 -3"
+        scale="1 1.84 1"
+        position="2.5 5.3 -15"
         panorama="oficinaFull"
         infoCard="aireAcondicionado"
         pick
@@ -142,8 +142,8 @@
       <a-image
         class="raycast"
         src="#pickDown"
-        scale="0.7 0.7 0.7"
-        position="1 0.6 -3"
+        scale="1 1.84 1"
+        position="5 -3.5 -15"
         panorama="oficinaFull"
         infoCard="accessories"
         pick
@@ -152,8 +152,8 @@
       <a-image
         class="raycast"
         src="#pickUp"
-        scale="0.7 0.7 0.7"
-        position="1.5 2.5 -3"
+        scale="1 1.84 1"
+        position="7 6 -15"
         panorama="oficinaFull"
         infoCard="superBoard"
         pick
@@ -162,8 +162,8 @@
       <a-image
         class="raycast"
         src="#pickDown"
-        scale="0.7 0.7 0.7"
-        position="-1.34 0.92 3"
+        scale="1 1.84 1"
+        position="-6.7 -2.2 15"
         panorama="oficinaFull"
         infoCard="electricDist"
         pick
@@ -172,8 +172,8 @@
       <a-image
         class="raycast"
         src="#pickDown"
-        scale="0.7 0.7 0.7"
-        position="-0.7 0.3 3"
+        scale="1 1.84 1"
+        position="-3.5 -5.5 15"
         panorama="oficinaFull"
         infoCard="floorVin"
         pick
@@ -182,23 +182,31 @@
       <a-image
         class="raycast"
         src="#pickDown"
-        scale="0.7 0.7 0.7"
-        position="0.1 1.3 3"
+        scale="1 1.84 1"
+        position="0.5 0 15"
         panorama="oficinaFull"
         infoCard="doorWind"
         pick
       ></a-image>
 
+      <a-ring
+        class="raycast"
+        rotation="0 150 0"
+        position="-0.75 1.5 1.5"
+        scale="0.6 0.6 0.6"
+        radius-inner="0.08"
+        radius-outer="0.1"
+        material="shader: flat"
+        opacity="0.2"
+        animation="property: scale; to: 1 1 1; dur: 800; easing: linear; loop: true"
+        animation__2="property: opacity; to: 1 1 1; dur: 800; easing: linear; loop: true"
+        change
+      ></a-ring>
+
       <!-- Seccion a-camera: 
         se encarga de dar parametros a la camara que se usara para navegar por la escena, 
         si esta no es establecida el framework se encarga usar una por defecto -->
-      <a-camera
-        id="camera"
-        active
-        zoom="1.0"
-        wasd-controls-enabled="false"
-        fov="70"
-      >
+      <a-camera active id="camera" zoom="1.0" wasd-controls-enabled="false">
         <!-- Seccion a-cursor: 
           se encarga de pintar un cursor en pantalla, en este caso se establece para que en modo 
           mobile el cliente tenga una referencia de la vision -->

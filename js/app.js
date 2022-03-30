@@ -27,6 +27,19 @@ AFRAME.registerComponent("close", {
   },
 });
 
+AFRAME.registerComponent("change", {
+  init: function () {
+    this.el.addEventListener("click", () => {
+      let scene = document.getElementById("sky").getAttribute("src");
+      if (scene.substr(scene.length-1, 1) == "0") {
+        document.getElementById("sky").setAttribute("src", scene.substr(0, scene.length-1) + "1");
+      } else if (scene.substr(scene.length-1, 1) == "1") {
+        document.getElementById("sky").setAttribute("src", scene.substr(0, scene.length-1) + "0");
+      }
+    });
+  },
+});
+
 window.addEventListener("wheel", (event) => {
   zoom(event);
 });
