@@ -12,7 +12,7 @@
         "card": "assets/cards/cardAccessories.png"
       },
       "superBoard": {
-        "titulo": "",
+        "titulo": " ",
         "description": "",
         "card": "assets/cards/cardSuperBoard.png"
       },
