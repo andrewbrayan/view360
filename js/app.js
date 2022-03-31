@@ -54,6 +54,6 @@ function setInfoCard(cardType, panorama) {
         jsondata[codeAlpha][panorama][cardType].description;
       document
         .getElementById("cardImg")
-        .setAttribute("src", jsondata.es[panorama][cardType].card);
+        .setAttribute("src", jsondata[codeAlpha][panorama][cardType].card);
     });
 }
