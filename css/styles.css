@@ -28,11 +28,6 @@
 .scene {
     height: calc(100vh - 90px)
 }
-@media (max-width: 500px) {
-    .scene {
-        height: calc(100vh - 100px)
-    }
-}
 
 .modalCard {
     max-width: 700px;
