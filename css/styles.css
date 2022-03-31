@@ -25,6 +25,15 @@
     font-family: TTSupermolotNeue-Medium;
 }
 
+.scene {
+    height: calc(100vh - 90px)
+}
+@media (max-width: 500px) {
+    .scene {
+        height: calc(100vh - 180px)
+    }
+}
+
 .modalCard {
     max-width: 700px;
     margin: auto;
