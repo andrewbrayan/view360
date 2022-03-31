@@ -30,7 +30,7 @@
 }
 @media (max-width: 500px) {
     .scene {
-        height: calc(100vh - 180px)
+        height: calc(100vh - 100px)
     }
 }
 
