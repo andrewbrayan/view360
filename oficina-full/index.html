@@ -19,6 +19,8 @@
 
     <!-- Hoja de estilos personal -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/style-of.css" />
+    
   </head>
   <body>
     <!-- nav con bootstrap -->
@@ -116,7 +118,6 @@
         <img src="../assets/extras/pickDown.svg" id="pickDown" />
         <img src="../assets/extras/pickUp.svg" id="pickUp" />
         <img src="../assets/extras/next.svg" id="next" />
-
       </a-assets>
 
       <!-- Seccion a-sky: se encarga de pintar la imagen en formato 360 -->
@@ -191,17 +192,17 @@
       ></a-image>
 
       <a-image
-      class="raycast"
-      src="#next"
-      rotation="0 -25 0"
-      position="-7.5 0 15"
-      scale="0.6 0.6 0.6"
-      opacity="0.2"
-      infoCard="next"
-      change
-      animation="property: scale; to: 1.5 1.5 1.5; dur: 800; easing: linear; loop: true"
-      animation__2="property: opacity; to: 1; dur: 800; easing: linear; loop: true"
-    ></a-image>
+        class="raycast"
+        src="#next"
+        rotation="0 -25 0"
+        position="-7.5 0 15"
+        scale="0.6 0.6 0.6"
+        opacity="0.2"
+        infoCard="next"
+        change
+        animation="property: scale; to: 1.5 1.5 1.5; dur: 800; easing: linear; loop: true"
+        animation__2="property: opacity; to: 1; dur: 800; easing: linear; loop: true"
+      ></a-image>
 
       <!-- <a-ring
         class="raycast"
@@ -218,7 +219,13 @@
       <!-- Seccion a-camera: 
         se encarga de dar parametros a la camara que se usara para navegar por la escena, 
         si esta no es establecida el framework se encarga usar una por defecto -->
-      <a-camera active id="camera" fov="70" zoom="1.0" wasd-controls-enabled="false">
+      <a-camera
+        active
+        id="camera"
+        fov="70"
+        zoom="1.0"
+        wasd-controls-enabled="false"
+      >
         <!-- Seccion a-cursor: 
           se encarga de pintar un cursor en pantalla, en este caso se establece para que en modo 
           mobile el cliente tenga una referencia de la vision -->
