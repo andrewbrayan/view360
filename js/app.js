@@ -27,24 +27,7 @@ AFRAME.registerComponent("close", {
   },
 });
 
-AFRAME.registerComponent("change", {
-  init: function () {
-    this.el.addEventListener("click", () => {
-      let scene = document.getElementById("sky").getAttribute("src");
-      if (scene.substr(scene.length-1, 1) == "0") {
-        document.getElementById("sky").setAttribute("src", scene.substr(0, scene.length-1) + "1");
-      } else if (scene.substr(scene.length-1, 1) == "1") {
-        document.getElementById("sky").setAttribute("src", scene.substr(0, scene.length-1) + "0");
-      }
-    });
-  },
-});
-
 window.addEventListener("wheel", (event) => {
-  zoom(event);
-});
-
-function zoom(event) {
   const delta = Math.sign(event.wheelDelta) / 10;
 
   var myZoom = document.getElementById("camera").getAttribute("zoom");
@@ -54,7 +37,7 @@ function zoom(event) {
   if (finalZoom > 5) finalZoom = 5;
 
   document.getElementById("camera").setAttribute("zoom", finalZoom);
-}
+});
 
 // funcion para obtener data de Json
 function setInfoCard(cardType, panorama) {
