@@ -1,7 +1,9 @@
 // se establece objeto para llamar el modal de bootstrap
-var myModal = new bootstrap.Modal(document.getElementById("cardModal"), {
-  keyboard: true,
-});
+if (document.getElementById("cardModal")) {
+  var myModal = new bootstrap.Modal(document.getElementById("cardModal"), {
+    keyboard: true,
+  });  
+}
 
 // funcion de A-frame para la creacion de atributos personales.
 // se crea un atributo que permite llamar una funcion al dar click a cualquier
