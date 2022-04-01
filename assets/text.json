@@ -47,7 +47,7 @@
       },
       "electricDist": {
         "titulo": "DISTRIBUCIÓN ELÉCTRICA",
-        "description": "<ul><li>1 caja de distribución eléctrica de 8 circuitos</li><li>5 balas de techo</li><li>4 tomas 110v</li><li>1 toma 220v</li><li>1 punto de voz y datos</li> <li>1 interruptor</li><li>Suministro y cableado en en tubería EMT y PVC</br>en techo.</li><li>Plug de conexión macho hembra de 32 amp.</li></ul>",
+        "description": "<ul><li>1 caja de distribución eléctrica de 8 circuitos</li><li>2 lamparas herméticas 2x18</li><li>4 tomas 110v</li><li>1 toma 220v</li><li>1 punto de voz y datos</li><li>1 interruptor</li><li>Suministro y cableado en en tubería EMT.</li><li>Plug de conexión macho hembra de 32 amp.</li></ul>",
         "card": "assets/cards/cardElectricDist.png"
       },
       "floorVin": {
@@ -58,6 +58,39 @@
       "doorWind": {
         "titulo": "VENTANAS Y PUERTAS",
         "description": "<ul><li>Ventana en aluminio corrediza 1.00 x 1.50</li><li>Ventanas fijas en aluminio de 0.30 x 1.50</li><li>Puerta en lamina de contenedor con brazo</br>hidráulico, cerrojo de seguridad, chapa</br>redonda</li></ul>",
+        "card": "assets/cards/cardDoorWind.png"
+      }
+    },
+    "salaVentas": {
+      "navTitle": "Sala de Ventas",
+      "aireAcondicionado": {
+        "titulo": "AIRE </br> ACONDICIONADO 12000 BTU",
+        "description": "Equipo BLUELINE R-410 MS-12 de 12.000 BTU </br> INVERTER SEER 16, ha sido fabricado para ser </br> instaldo en areas de 16 a 23 m<sup>2</sup>. En su interior </br> contiene un compresor rotativo de bajo índice </br> de ruido en su funcionamiento. Tiene un amplio </br> flujo de aire",
+        "card": "assets/cards/cardAirCond.png"
+      },
+      "accessories": {
+        "titulo": "ACCESORIOS Y MOBILIARIO",
+        "description": "<ul><li>Sofa 2 puestos THOR tela gris claro</li><li>Mesa auxiliar Danish mad roble / metal negro</li><li>Silla auxiliar Eames plástico blanco</li><li>Puesto buro nogal</li><li>Bilbioteca Mett mad roble natural</li><li>Poltrona Hazel terciopelo azul osc patas negras</br>tope dorado</li><li>Matera REY metal blanco</li><li>Planta artifical alta mostera</li><li>Cuadro fotografía Belfast concentrico</li><li>Tapete cuadrado delos lana nat/beige</li><li>Planta artificial bonsai desierto</li><li>Planta artificial Wood puya</li><li>Papelera cuadrada malla negra</li></ul>",
+        "card": "assets/cards/cardAccessories.png"
+      },
+      "ceiling": {
+        "titulo": " ",
+        "description": "",
+        "card": "assets/cards/cardCeiling.png"
+      },
+      "electricDist": {
+        "titulo": "DISTRIBUCIÓN ELÉCTRICA",
+        "description": "<ul><li>1 caja de distribución eléctrica de 8 circuitos</li><li>5 balas de techo</li><li>1 lampara de techo solare metal café</li><li>4 tomas 110v</li><li>1 toma 220v</li><li>1 punto de voz y datos</li><li>1 interruptor</li><li>Suministro y cableado en en tubería EMT y PVC</br>en techo.</li><li>Plug de conexión macho hembra de 32 amp.</li></ul>",
+        "card": "assets/cards/cardElectricDist.png"
+      },
+      "floorVin": {
+        "titulo": "PISO VINÍLICO</br>DE ALTO TRÁFICO",
+        "description": "Piso vinílico en tablas textura madera con</br>apariencia gris de piso laminado, sistema click,</br>4.0 mm de espesor. 14m<sup>2</sup>",
+        "card": "assets/cards/cardFloorVin.png"
+      },
+      "doorWind": {
+        "titulo": "PUERTA",
+        "description": "Puesta corrediza en vidrio de</br>seguridad de 8mm 2.00 x 2.20",
         "card": "assets/cards/cardDoorWind.png"
       }
     }
@@ -110,7 +143,7 @@
       },
       "electricDist": {
         "titulo": "ELECTRICAL DISTRIBUTION",
-        "description": "<ul><li>1 circuit center</li><li>6 interior light fixture, LED</li><li>4 Duplex receptacle 110 V, 20 A</li><li>1 Duplex receptacle 220 V, 20 A</li><li>2 Voice data Point</li><li>1 Lighting control Switch</li><li>Conduit body 3/4</li><li>32 Ampere connection plug</li></ul>",
+        "description": "<ul><li>1 circuit center</li><li>2 hermetic lamps 2x18</li><li>4 Duplex receptacle 110 V, 20 A</li><li>1 Duplex receptacle 220 V, 20 A</li><li>2 Voice data Point</li><li>1 Lighting control Switch</li><li>Supply and wiring in EMT pipe.</li><li>32 Ampere connection plug</li></ul>",
         "card": "assets/cards/cardElectricDist.png"
       },
       "floorVin": {
@@ -121,6 +154,39 @@
       "doorWind": {
         "titulo": "WINDOWS AND DOORS",
         "description": "<ul><li>Aluminum sliding window 1.00 x 1.50</li><li>Aluminum fixed windows of 0.30 x 1.50</li><li>Door in container sheet door closer,</br>security lock, round plate.</li></ul>",
+        "card": "assets/cards/cardDoorWind.png"
+      }
+    },
+    "salaVentas": {
+      "navTitle": "Sales Room",
+      "aireAcondicionado": {
+        "titulo": "AIR </br>CONDITIONING 12000 BTU",
+        "description": "Equipment BLUELINE R-410 MS-12 / 12000 BTU</br>INVERTER SEER 16, has been manufactured to be</br>installed in areas of 16 to 23 m<sup>2</sup>. Inside, it</br> contains a rotary compressor with low</br>noise operation. It has ample</br>air flow.",
+        "card": "assets/cards/cardAirCond.png"
+      },
+      "accessories": {
+        "titulo": "ACCESSORIES AND FURNITURE",
+        "description": "<ul><li>THOR 2 seater sofa light gray fabric</li><li>Danish mad oak / black metal side table</li><li>Eames white plastic side chair</li><li>Walnut desk stand</li><li>Mett Mad Natural Oak Library</li><li>Hazel dark blue velvet easy chair with black legs</br>gold top</li><li>King white metal pot</li><li>Mostera tall artificial plant</li><li>Concentric Belfast photography picture</li><li>Square rug in nat/beige wool</li><li>Artificial desert bonsai plant</li><li>Wood puya artificial plant</li><li>Square black mesh bin</li></ul>",
+        "card": "assets/cards/cardAccessories.png"
+      },
+      "ceiling": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardCeilingEN.jpg"
+      },
+      "electricDist": {
+        "titulo": "ELECTRICAL DISTRIBUTION",
+        "description": "<ul><li>1 circuit center</li><li>5 interior light fixture, LED</li><li>1 brown metal solar ceiling lamp</li><li>4 Duplex receptacle 110 V, 20 A</li><li>1 Duplex receptacle 220 V, 20 A</li><li>1 Voice data Point</li><li>1 Lighting control Switch</li><li>Supply and wiring in EMT and PVC pipe</br>on the ceiling.</li><li>32 Ampere connection plug</li></ul>",
+        "card": "assets/cards/cardElectricDist.png"
+      },
+      "floorVin": {
+        "titulo": "HIGH TRAFFIC</br>VINYL FLOORING",
+        "description": "Vinyl flooring on wood texture planks with</br>gray laminate floor appearance, click system,</br>4.0 mm thick 14m<sup>2</sup>",
+        "card": "assets/cards/cardFloorVin.png"
+      },
+      "doorWind": {
+        "titulo": "DOOR",
+        "description": "Sliding door in safety glass 8mm 2.00 x 2.20",
         "card": "assets/cards/cardDoorWind.png"
       }
     }

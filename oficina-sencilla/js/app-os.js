@@ -48,5 +48,5 @@ AFRAME.registerComponent("change", {
     })
     .then((jsondata) => {
       document.getElementById("navTitle").innerHTML =
-        jsondata[codeAlpha].oficinaFull.navTitle;
+        jsondata[codeAlpha].oficinaStand.navTitle;
     });  
