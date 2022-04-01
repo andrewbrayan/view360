@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour 360 - Oficina Full</title>
+    <title>Tour 360 - Oficina Sencilla</title>
 
     <!-- CDN de CSS para uso de Bootstrap -->
     <link
@@ -13,7 +13,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
+
     <!-- CDN de CSS para uso de Font Brandon Grotesque -->
     <link href="http://fonts.cdnfonts.com/css/brandon-text-medium" rel="stylesheet">
 
@@ -22,7 +22,7 @@
 
     <!-- Hoja de estilos personal -->
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="css/style-of.css" />
+    <link rel="stylesheet" href="css/styles-os.css" />
 
   </head>
   <body>
@@ -111,12 +111,12 @@
       <a-assets>
         <!-- Imagenes 360 -->
         <img
-          src="assets/panorama/Panorama-Oficina-Full-0.jpg"
-          id="oficinaFull0"
+          src="assets/panorama/Panorama-Oficina-Stand-0.jpg"
+          id="oficinaStand0"
         />
         <img
-          src="assets/panorama/Panorama-Oficina-Full-1.jpg"
-          id="oficinaFull1"
+          src="assets/panorama/Panorama-Oficina-Stand-1.jpg"
+          id="oficinaStand1"
         />
         <!-- recursos extras -->
         <img src="../assets/extras/pickDown.svg" id="pickDown" />
@@ -126,7 +126,7 @@
 
       <!-- Seccion a-sky: se encarga de pintar la imagen en formato 360 -->
       <a-sky
-        src="#oficinaFull0"
+        src="#oficinaStand0"
         rotation="0 -130 0"
         class="raycast"
         id="sky"
@@ -135,22 +135,13 @@
 
       <!-- Seccion a-image: se encarga de pintar una imagen en formato plano. 
         Para este caso es usada para pintar los puntos para mostrar las tarjetas de informacion -->
-      <a-image
-        class="raycast"
-        src="#pickDown"
-        scale="1 1.84 1"
-        position="2.5 5.3 -15"
-        panorama="oficinaFull"
-        infoCard="aireAcondicionado"
-        pick
-      ></a-image>
 
       <a-image
         class="raycast"
         src="#pickDown"
         scale="1 1.84 1"
-        position="5 -3.5 -15"
-        panorama="oficinaFull"
+        position="0.6 -1 -15"
+        panorama="oficinaStand"
         infoCard="accessories"
         pick
       ></a-image>
@@ -159,8 +150,8 @@
         class="raycast"
         src="#pickUp"
         scale="1 1.84 1"
-        position="7 6 -15"
-        panorama="oficinaFull"
+        position="-2 6 -15"
+        panorama="oficinaStand"
         infoCard="ceiling"
         pick
       ></a-image>
@@ -169,8 +160,8 @@
         class="raycast"
         src="#pickDown"
         scale="1 1.84 1"
-        position="-6.7 -2.2 15"
-        panorama="oficinaFull"
+        position="-0.8 -2 15"
+        panorama="oficinaStand"
         infoCard="electricDist"
         pick
       ></a-image>
@@ -179,8 +170,8 @@
         class="raycast"
         src="#pickDown"
         scale="1 1.84 1"
-        position="-3.5 -5.5 15"
-        panorama="oficinaFull"
+        position="1.5 -5.5 15"
+        panorama="oficinaStand"
         infoCard="floorVin"
         pick
       ></a-image>
@@ -189,8 +180,8 @@
         class="raycast"
         src="#pickDown"
         scale="1 1.84 1"
-        position="0.5 0 15"
-        panorama="oficinaFull"
+        position="6.3 0 15"
+        panorama="oficinaStand"
         infoCard="doorWind"
         pick
       ></a-image>
@@ -198,8 +189,8 @@
       <a-image
         class="raycast"
         src="#next"
-        rotation="0 -25 0"
-        position="-7.5 0 15"
+        rotation="0 0 0"
+        position="0 0 15"
         scale="0.6 0.6 0.6"
         opacity="0.2"
         infoCard="next"
@@ -253,6 +244,6 @@
 
     <!-- Hoja Js Personal -->
     <script src="../js/app.js"></script>
-    <script src="js/app-of.js"></script>
+    <script src="js/app-os.js"></script>
   </body>
 </html>

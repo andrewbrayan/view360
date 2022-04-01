@@ -15,7 +15,7 @@
       "ceiling": {
         "titulo": " ",
         "description": "",
-        "card": "assets/cards/cardceiling.png"
+        "card": "assets/cards/cardCeiling.png"
       },
       "electricDist": {
         "titulo": "DISTRIBUCIÓN ELÉCTRICA",
@@ -37,13 +37,13 @@
       "navTitle": "Oficina Sencilla",
       "accessories": {
         "titulo": "ACCESORIOS Y MOBILIARIO",
-        "description": "<ul><li>Silla auxiliar Eames plástico blanco</li><li>Puesto buro nogal</li><li>Bilbioteca Mett mad roble natural</li><li>Matera REY metal blanco</li><li>Planta artifical alta mostera</li><li>Cuadro fotografía Belfast concentrico</li><li>Planta artificial bonsai desierto</li><li>Planta artificial Wood puya</li><li>Papelera cuadrada malla negra</li><li>Vela hexagonal metal cobre</li><li>Cuadro artístico Sahara</li><li>Cuadro elephants canvas silver</li><li>Escritorio studio en L lam nogal argan/negro</li><li>Silla giratoria worker base blanca gris/naranja</li></ul>",
+        "description": "<ul><li>Silla auxiliar Eames plástico blanco</li><li>Puesto buro nogal</li><li>Bilbioteca Mett mad roble natural</li><li>Matera REY metal blanco</li><li>Planta artifical alta mostera</li><li>Cuadro fotografía Belfast concentrico</li><li>Planta artificial bonsai desierto</li><li>Planta artificial Wood puya</li><li>Papelera cuadrada malla negra</li><li>Vela hexagonal metal cobre</li><li>Escritorio studio en L lam nogal argan/negro</li><li>Silla giratoria worker base blanca gris/naranja</li></ul>",
         "card": "assets/cards/cardAccessories.png"
       },
       "ceiling": {
         "titulo": " ",
         "description": "",
-        "card": "assets/cards/cardceiling.png"
+        "card": "assets/cards/cardCeiling.png"
       },
       "electricDist": {
         "titulo": "DISTRIBUCIÓN ELÉCTRICA",
@@ -78,7 +78,7 @@
       "ceiling": {
         "titulo": "",
         "description": "",
-        "card": "assets/cards/cardceilingEN.jpg"
+        "card": "assets/cards/cardCeilingEN.jpg"
       },
       "electricDist": {
         "titulo": "ELECTRICAL DISTRIBUTION",
@@ -100,13 +100,13 @@
       "navTitle": "Standard Office",
       "accessories": {
         "titulo": "ACCESSORIES AND FURNITURE",
-        "description": "<ul><li>Eames white plastic side chair</li><li>Walnut lam buro post</li><li>Mett wood library natural oak</li><li>Matera rey metal white</li><li>Artificial plant tall flytrap</li><li>Concentric belfast photo frame</li><li>Artificial plant Bonsai desert</li><li>Artificial plant Wood puya</li><li>Square black mesh litter garbage can</li><li>Copper metal hexagonal candle</li><li>Sahara artistic painting</li><li>Silver canvas elephant painting</li><li>Argan walnut/black lam L-shaped studio desk</li><li>Worker swivel chair white gray/orange base</li></ul>",
+        "description": "<ul><li>Eames white plastic side chair</li><li>Walnut lam buro post</li><li>Mett wood library natural oak</li><li>Matera rey metal white</li><li>Artificial plant tall flytrap</li><li>Concentric belfast photo frame</li><li>Artificial plant Bonsai desert</li><li>Artificial plant Wood puya</li><li>Square black mesh litter garbage can</li><li>Copper metal hexagonal candle</li><li>Argan walnut/black lam L-shaped studio desk</li><li>Worker swivel chair white gray/orange base</li></ul>",
         "card": "assets/cards/cardAccessories.png"
       },
       "ceiling": {
         "titulo": "",
         "description": "",
-        "card": "assets/cards/cardceilingEN.jpg"
+        "card": "assets/cards/cardCeilingEN.png"
       },
       "electricDist": {
         "titulo": "ELECTRICAL DISTRIBUTION",
