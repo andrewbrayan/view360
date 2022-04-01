@@ -1,29 +1,3 @@
-.texts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text,
-h4 {
-  margin: 0 45px;
-  margin-bottom: 30px;
-}
-
-.text,
-p {
-  margin: 0 45px;
-  line-height: 1.3;
-  font-size: 15px;
-}
-
-@media (max-width: 680px) {
-  .text,
-  h4 {
-    font-size: 3.5vw;
-  }
-  .text,
-  p {
-    font-size: 2vw;
-  }
+.navTitle {
+  color: rgb(0, 60, 152);
 }
