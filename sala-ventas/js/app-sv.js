@@ -7,23 +7,25 @@ AFRAME.registerComponent("change", {
             .getElementById("sky")
             .setAttribute("src", scene.substr(0, scene.length - 1) + "1");
   
-          changePosition("raycast", "accessories", "19 -1 -15", "0 -50 0");
-          changePosition("raycast", "ceiling", "12 4.5 -15", "0 -50 0");
-          changePosition("raycast", "electricDist", "-10 -6.5 10", "0 -50 0");
-          changePosition("raycast", "floorVin", "-5 -10.2 10", "0 -50 0");
-          changePosition("raycast", "doorWind", "7 -0.8 10", "0 50 0");
-          changePosition("raycast", "next", "19 1.5 -15", "0 -50 0");
+          changePosition("raycast", "aireAcondicionado", "24.8 6.4 -2", "0 100 0");
+          changePosition("raycast", "accessories", "10.7 -7.8 -10.2", "0 -30 0");
+          changePosition("raycast", "ceiling", "-8.5 10.7 7", "0 -80 0");
+          changePosition("raycast", "electricDist", "15.4 -2.5 -6.6", "0 -60 0");
+          changePosition("raycast", "floorVin", "15 -4 1.5", "0 80 0");
+          changePosition("raycast", "doorWind", "18 0.5 12.7", "0 50 0");
+          changePosition("raycast", "next", "15 0 1", "0 80 0");
         } else if (scene.substr(scene.length - 1, 1) == "1") {
           document
             .getElementById("sky")
             .setAttribute("src", scene.substr(0, scene.length - 1) + "0");
   
-          changePosition("raycast", "accessories", "0.6 -1 -15", "0 0 0");
-          changePosition("raycast", "ceiling", "-2 6 -15", "0 0 0");
-          changePosition("raycast", "electricDist", "-0.8 -2 15", "0 0 0");
-          changePosition("raycast", "floorVin", "1.5 -5.5 15", "0 0 0");
-          changePosition("raycast", "doorWind", "6.3 0 15", "0 0 0");
-          changePosition("raycast", "next", "0 0 15", "0 0 0");
+          changePosition("raycast", "aireAcondicionado", "20 7 2.5", "0 90 0");
+          changePosition("raycast", "accessories", "-6.5 -3.7 -15", "0 0 0");
+          changePosition("raycast", "ceiling", "-22 8.5 -8.5", "0 60 0");
+          changePosition("raycast", "electricDist", "12.5 -6 -13", "0 -30 0");
+          changePosition("raycast", "floorVin", "13.5 -5.5 5.5", "0 70 0");
+          changePosition("raycast", "doorWind", "-7 -1 11", "0 -30 0");
+          changePosition("raycast", "next", "-10 0 -9", "0 50 0");
         }
       });
     },
@@ -48,5 +50,5 @@ AFRAME.registerComponent("change", {
     })
     .then((jsondata) => {
       document.getElementById("navTitle").innerHTML =
-        jsondata[codeAlpha].oficinaFull.navTitle;
+        jsondata[codeAlpha].SalesRoom.navTitle;
     });  

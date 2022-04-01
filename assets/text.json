@@ -61,7 +61,7 @@
         "card": "assets/cards/cardDoorWind.png"
       }
     },
-    "salaVentas": {
+    "SalesRoom": {
       "navTitle": "Sala de Ventas",
       "aireAcondicionado": {
         "titulo": "AIRE </br> ACONDICIONADO 12000 BTU",
@@ -157,7 +157,7 @@
         "card": "assets/cards/cardDoorWind.png"
       }
     },
-    "salaVentas": {
+    "SalesRoom": {
       "navTitle": "Sales Room",
       "aireAcondicionado": {
         "titulo": "AIR </br>CONDITIONING 12000 BTU",
