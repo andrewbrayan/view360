@@ -93,6 +93,39 @@
         "description": "Puesta corrediza en vidrio de</br>seguridad de 8mm 2.00 x 2.20",
         "card": "assets/cards/cardDoorWind.png"
       }
+    },
+    "reefer": {
+      "navTitle": "Contenedor Refrigerado",
+      "aireAcondicionado": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardAirCond.png"
+      },
+      "accessories": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardAccessories.png"
+      },
+      "ceiling": {
+        "titulo": " ",
+        "description": "",
+        "card": "assets/cards/cardCeiling.png"
+      },
+      "electricDist": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardElectricDist.png"
+      },
+      "floorVin": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardFloorVin.png"
+      },
+      "doorWind": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardDoorWind.png"
+      }
     }
   },
   "en": {
@@ -188,6 +221,39 @@
         "titulo": "DOOR",
         "description": "Sliding door in safety glass 8mm 2.00 x 2.20",
         "card": "assets/cards/cardDoorWind.png"
+      }
+    },
+    "reefer": {
+      "navTitle": "Reefer Container",
+      "aireAcondicionado": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardAirCond.png"
+      },
+      "accessories": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardAccessories.jpg"
+      },
+      "ceiling": {
+        "titulo": " ",
+        "description": "",
+        "card": "assets/cards/cardCeiling.png"
+      },
+      "electricDist": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardElectricDist.png"
+      },
+      "floorVin": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardFloorVin.png"
+      },
+      "doorWind": {
+        "titulo": "",
+        "description": "",
+        "card": "assets/cards/cardDoorWind.jpg"
       }
     }
   }
