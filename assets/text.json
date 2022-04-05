@@ -1,5 +1,11 @@
 {
   "es": {
+    "menu": {
+      "oficinaFull": "Oficina</br>Full",
+      "oficinaStand": "Oficina</br>Sencilla",
+      "SalesRoom": "Sala</br>Ventas",
+      "reefer": "Contenedor</br>Refrigerado"
+    },
     "oficinaFull": {
       "navTitle": "Oficina Full",
       "aireAcondicionado": {
@@ -129,6 +135,12 @@
     }
   },
   "en": {
+    "menu": {
+      "oficinaFull": "Full</br>Office",
+      "oficinaStand": "Standard</br>Office",
+      "SalesRoom": "Sales</br>Room",
+      "reefer": "Reefer</br>Container"
+    },
     "oficinaFull": {
       "navTitle": "Full Office",
       "aireAcondicionado": {
