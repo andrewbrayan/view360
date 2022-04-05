@@ -94,6 +94,6 @@ function setInfoCard(cardType, panorama) {
     });
 }
 
-if (AFRAME.utils.device.isMobile()) {
-  window.scroll(60, 0);
-}
+// if (AFRAME.utils.device.isMobile()) {
+//   window.scroll(60, 0);
+// }
