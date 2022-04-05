@@ -24,8 +24,9 @@
 </head>
 
 <body>
+
   <!-- nav con bootstrap -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-4" style="min-height: 90px">
+  <nav id="navbarBootstrap" class="navbar navbar-expand-lg navbar-light bg-light px-4" style="min-height: 90px">
     <div class="container-fluid">
       <a class="navbar-brand d-none d-sm-block" href="#">
         <img src="../assets/extras/LOGOS-04.png" height="64px" alt="Logo" />
@@ -106,7 +107,7 @@
     <!-- Seccion a-sky: se encarga de pintar la imagen en formato 360 -->
     <a-sky src="#salaVentas0" rotation="0 -130 0" class="raycast" id="sky" close></a-sky>
 
-    <!-- Seccion a-image: se encarga de pintar una imagen en formato plano. 
+    <!-- Seccion a-image: se encarga de pintar una imagen en formato plano.
         Para este caso es usada para pintar los puntos para mostrar las tarjetas de informacion -->
 
     <a-image class="raycast" src="#pickDown" scale="1 1.84 1" rotation="0 90 0" position="20 7 2.5" panorama="SalesRoom"
@@ -131,17 +132,17 @@
       infoCard="next" change animation="property: scale; to: 1.5 1.5 1.5; dur: 800; easing: linear; loop: true"
       animation__2="property: opacity; to: 1; dur: 800; easing: linear; loop: true"></a-image>
 
-    <!-- Seccion a-camera: 
-        se encarga de dar parametros a la camara que se usara para navegar por la escena, 
+    <!-- Seccion a-camera:
+        se encarga de dar parametros a la camara que se usara para navegar por la escena,
         si esta no es establecida el framework se encarga usar una por defecto -->
     <a-camera active id="camera" fov="70" zoom="1.0" wasd-controls-enabled="false">
-      <!-- Seccion a-cursor: 
-          se encarga de pintar un cursor en pantalla, en este caso se establece para que en modo 
+      <!-- Seccion a-cursor:
+          se encarga de pintar un cursor en pantalla, en este caso se establece para que en modo
           mobile el cliente tenga una referencia de la vision -->
       <a-cursor position="0 0 -1.6" fuse="true" fuse-timeout="1000" raycaster="objects: .raycast"></a-cursor>
 
-      <!-- Seccion a-entity: es un objeto generico del framework, puede ser utilizado 
-          para cualquiera de las cosas anteriores. para este caso es utilizado como punto 
+      <!-- Seccion a-entity: es un objeto generico del framework, puede ser utilizado
+          para cualquiera de las cosas anteriores. para este caso es utilizado como punto
           de referencia para usarlo como puntero con accion de click -->
       <a-entity cursor="rayOrigin: mouse" raycaster="objects: .raycast"></a-entity>
     </a-camera>

@@ -41,9 +41,20 @@ window.addEventListener("wheel", (event) => {
   document.getElementById("camera").setAttribute("zoom", finalZoom);
 });
 
+codeAlpha = "es";
+
+// funcion Geolocalizacion
+fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country").then((response) => {
+  return response.json();
+}).then((data) => {
+  console.log(data);
+  if (data.country == "US") {
+    codeAlpha = "en";
+  }
+})
+
 // funcion para obtener data de Json
 function setInfoCard(cardType, panorama) {
-  codeAlpha = "en";
   fetch("../assets/text.json")
     .then((response) => {
       return response.json();

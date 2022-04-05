@@ -43,13 +43,21 @@ function changePosition(id, infoCard, position, rotation) {
   });
 }
 
-codeAlpha = "en";
-fetch("../assets/text.json")
+fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
   .then((response) => {
     return response.json();
   })
-  .then((jsondata) => {
-    console.log('holaa');
-    document.getElementById("navTitle").innerHTML =
-      jsondata[codeAlpha].oficinaFull.navTitle;
+  .then((data) => {
+    codeAlpha = "es";
+    if (data.country == "US") {
+      codeAlpha = "en";
+    }
+    fetch("../assets/text.json")
+      .then((response) => {
+        return response.json();
+      })
+      .then((jsondata) => {
+        document.getElementById("navTitle").innerHTML =
+          jsondata[codeAlpha].oficinaFull.navTitle;
+      });
   });
