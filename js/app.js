@@ -84,7 +84,6 @@ function setInfoCard(cardType, panorama) {
       return response.json();
     })
     .then((jsondata) => {
-      console.log(AFRAME.utils.device.isMobile());
       document.getElementById("cardTitle").innerHTML =
         jsondata[codeAlpha][panorama][cardType].titulo;
       document.getElementById("cardDescription").innerHTML =
@@ -93,4 +92,8 @@ function setInfoCard(cardType, panorama) {
         .getElementById("cardImg")
         .setAttribute("src", jsondata[codeAlpha][panorama][cardType].card);
     });
+}
+
+if (AFRAME.utils.device.isMobile()) {
+  window.scroll(60, 0);
 }
