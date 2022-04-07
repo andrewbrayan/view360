@@ -53,6 +53,8 @@ window.addEventListener("wheel", (event) => {
 });
 
 function howNavigate() {
+  document.getElementById("cardTitle").innerHTML = "";
+  document.getElementById("cardDescription").innerHTML = "";
   if (codeAlpha == "es") {
     document
       .getElementById("cardImg")
@@ -62,7 +64,7 @@ function howNavigate() {
       .getElementById("cardImg")
       .setAttribute("src", "../assets/extras/cardHowNavEN.png");
   }
-  
+
   myModal.show();
 }
 
