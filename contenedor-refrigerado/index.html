@@ -28,10 +28,10 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4" style="min-height: 90px">
     <div class="container-fluid">
       <a class="navbar-brand d-none d-sm-block" href="#">
-        <img src="../assets/extras/LOGOS-04.png" height="64px" alt="Logo" />
+        <img src="../assets/extras/LOGOS-05.png" height="64px" alt="Logo" />
       </a>
       <a class="navbar-brand d-block d-sm-none" href="#">
-        <img src="../assets/extras/LOGOS-06.png" height="64px" alt="Logo" />
+        <img src="../assets/extras/LOGOS-21.png" height="64px" alt="Logo" />
       </a>
       <h2 class="navTitle" id="navTitle"></h2>
       <div class="dropdown">
@@ -43,25 +43,25 @@
         </button>
         <ul class="py-4 dropdown-menu dropdown-menu-end personalDropdown" aria-labelledby="dropdownMenuButton1">
           <div class="lista">
-            <li>
+            <li id="sala-ventas-menu">
               <a class="m-2 lista textMenuColor" href="../sala-ventas/">
                 <img class="miniatura" src="../assets/miniaturas/salaVentas.jpg" alt="">
                 <p id="menu-SalesRoom" class="m-0 text-center textMenu"></p>
               </a>
             </li>
-            <li>
+            <li id="oficina-full-menu">
               <a class="m-2 lista textMenuColor" href="../oficina-full/">
                 <img class="miniatura" src="../assets/miniaturas/oficinaFull.jpg" alt="">
                 <p id="menu-oficinaFull" class="m-0 text-center textMenu"></p>
               </a>
             </li>
-            <li>
+            <li id="oficina-sencilla-menu">
               <a class="m-2 lista textMenuColor" href="../oficina-sencilla/">
                 <img class="miniatura" src="../assets/miniaturas/oficinaSencilla.jpg" alt="">
                 <p id="menu-oficinaStand" class="m-0 text-center textMenu"></p>
               </a>
             </li>
-            <li>
+            <li id="contenedor-refrigerado-menu">
               <a class="m-2 lista textMenuColor" href="../contenedor-refrigerado/">
                 <img class="miniatura" src="../assets/miniaturas/refeer.jpg" alt="">
                 <p id="menu-reefer" class="m-0 text-center textMenu"></p>
@@ -89,9 +89,8 @@
   </div>
 
   <!-- redes sociales -->
-  <div class="position-absolute bottom-0 end-0 d-flex flex-column my-2 mx-5" style="z-index: 1;">
-    <a
-      href="https://api.whatsapp.com/send/?phone=573116394356&text=Hola+E+Containers+tengo+una+idea+genial+y+quiero+hacerla+realidad&app_absent=0">
+  <div class="position-absolute bottom-0 end-0 d-flex flex-column my-5 mx-3" style="z-index: 1;">
+    <a id="whatsapp" panorama="refeer" href="" target="_blank">
       <img src="../assets/extras/whatsapp.png" width="50px" alt="">
     </a>
     <a href="https://www.instagram.com/econtainers/">
@@ -102,6 +101,13 @@
     </a>
   </div>
 
+  <!-- Boton como navegar -->
+  <div class="position-absolute bottom-0 start-0 my-3 mx-3" style="z-index: 1;">
+    <a id="howControls" panorama="refeer" onclick="howNavigate()">
+      <img id="howControlsImg" src="../assets/extras/howNav.png" height="50px" alt="">
+    </a>
+  </div>
+  
   <!-- Escena para la renderizacion de vista 360 con framework A-FRAME -->
   <!-- embedded: permite que la escena no ocupe el 100% de la pantalla, permitiendo incluir nav header -->
   <a-scene embedded class="scene" >

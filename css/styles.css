@@ -73,6 +73,14 @@ p {
   }
 }
 
+#howControls img {
+  opacity: 0.3;
+}
+
+#howControls img:hover {
+  opacity: 1;
+}
+
 .itemListMenu {
   background: rgba(229, 229, 229, 0.4);
   border-radius: 10px;

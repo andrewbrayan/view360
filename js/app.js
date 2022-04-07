@@ -52,6 +52,20 @@ window.addEventListener("wheel", (event) => {
   }
 });
 
+function howNavigate() {
+  if (codeAlpha == "es") {
+    document
+      .getElementById("cardImg")
+      .setAttribute("src", "../assets/extras/cardHowNav.png");
+  } else {
+    document
+      .getElementById("cardImg")
+      .setAttribute("src", "../assets/extras/cardHowNavEN.png");
+  }
+  
+  myModal.show();
+}
+
 codeAlpha = "es";
 
 // funcion Geolocalizacion
@@ -62,6 +76,11 @@ fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
   .then((data) => {
     if (data.country == "US") {
       codeAlpha = "en";
+      document.getElementById("sala-ventas-menu").style.display = "none";
+      document.getElementById("oficina-sencilla-menu").style.display = "none";
+      document
+        .getElementById("howControlsImg")
+        .setAttribute("src", "../assets/extras/HowNavEN.png");
     }
 
     fetch("../assets/text.json")
@@ -94,6 +113,29 @@ function setInfoCard(cardType, panorama) {
     });
 }
 
+function getLinkWhatsApp(panorama) {
+  url = "https://api.whatsapp.com/send/?";
+  texto =
+    "&text=Hola+E+Containers+tengo+una+idea+genial+y+quiero+hacerla+realidad&app_absent=0";
+  telefono = "";
+  if (
+    panorama == "oficinaFull" ||
+    panorama == "oficinaSencilla" ||
+    panorama == "salaVentas"
+  ) {
+    telefono = "phone=573116394356";
+    return url + telefono + texto;
+  } else if (panorama == "refeer") {
+    telefono = "phone=573103617492";
+    return url + telefono + texto;
+  }
+}
+
+whatsapp = document.getElementById("whatsapp");
+whatsapp.setAttribute(
+  "href",
+  getLinkWhatsApp(whatsapp.getAttribute("panorama"))
+);
 // if (AFRAME.utils.device.isMobile()) {
 //   window.scroll(60, 0);
 // }
