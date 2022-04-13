@@ -18,10 +18,25 @@
 
   <script>
     window.onload(
-      setTimeout(() => {
-        location.href = "/360/oficina-full/"
-      }, 2000)
+
+
+
     )
+
+    function start() {
+      fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          if (data.country == "US") {
+            document.querySelector('.loadingUpground').setAttribute('src', 'assets/loading/loadingUpgroundEN.png')
+          }
+          setTimeout(() => {
+            // location.href = "/360/oficina-full/"
+          }, 2000)
+        });
+    }
   </script>
 </body>
 
