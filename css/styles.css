@@ -134,9 +134,7 @@ p {
 
 @media (max-width: 500px) {
   .loadingUpground {
-    height: 75%;
-    left: 0;
-    position: absolute;
+    height: 70% !important;
   }
 }
 
