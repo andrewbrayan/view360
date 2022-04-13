@@ -83,7 +83,9 @@ fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
       document
         .getElementById("howControlsImg")
         .setAttribute("src", "../assets/extras/HowNavEN.png");
-    } else {
+      document
+        .querySelector("a-scene")
+        .setAttribute("device-orientation-permission-ui", "");
     }
 
     fetch("../assets/text.json")
