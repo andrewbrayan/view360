@@ -17,11 +17,7 @@
   </div>
 
   <script>
-    window.onload(
-
-
-
-    )
+    window.onload(start())
 
     function start() {
       fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
@@ -33,7 +29,7 @@
             document.querySelector('.loadingUpground').setAttribute('src', 'assets/loading/loadingUpgroundEN.png')
           }
           setTimeout(() => {
-            // location.href = "/360/oficina-full/"
+            location.href = "/360/oficina-full/"
           }, 2000)
         });
     }
