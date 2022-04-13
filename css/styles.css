@@ -132,6 +132,14 @@ p {
   position: absolute;
 }
 
+@media (max-width: 500px) {
+  .loadingUpground {
+    height: 75%;
+    left: 0;
+    position: absolute;
+  }
+}
+
 .loadingUpground {
   height: 100%;
   left: 0;
