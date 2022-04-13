@@ -62,7 +62,7 @@ function howNavigate() {
   } else {
     document
       .getElementById("cardImg")
-      .setAttribute("src", "../assets/extras/cardHowNavEN.png");
+      .setAttribute("src", "../assets/extras/cardHowNavEN.jpg");
   }
 
   myModal.show();
