@@ -46,8 +46,7 @@ body {
 }
 
 .navTitle {
-  font-family: 'Roboto', sans-serif;
-  width: min-content;
+  font-family: "Roboto", sans-serif;
 }
 
 .texts {
@@ -141,6 +140,9 @@ p {
   .loadingUpground {
     height: auto !important;
     width: 100%;
+  }
+  .navTitle {
+    width: min-content;
   }
 }
 

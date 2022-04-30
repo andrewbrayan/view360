@@ -10,7 +10,9 @@ AFRAME.registerComponent("change", {
         document.getElementById("sky").setAttribute("rotation", "0 -120 0");
 
         changePosition("raycast", "aireAcondicionado", "-1 4 -15");
-        changePosition("raycast", "accessories", "-5 0 -15", null, true);
+        if (codeAlpha == "es") {
+          changePosition("raycast", "accessories", "-5 0 -15", null, true);
+        }
         changePosition("raycast", "ceiling", "-4.5 7.8 -13");
         changePosition("raycast", "electricDist", "6 1 -15", "0 0 0");
         changePosition("raycast", "floorVin", "-1 -5 -15");
@@ -50,12 +52,13 @@ function changePosition(id, infoCard, position, rotation, visible) {
   });
 }
 
+codeAlpha = "es";
+
 fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    codeAlpha = "es";
     if (data.country == "US") {
       codeAlpha = "en";
     }

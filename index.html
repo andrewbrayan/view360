@@ -25,11 +25,14 @@
         })
         .then((data) => {
           if (data.country == "US") {
+            localStorage.setItem('codeAlpha', 'es');
             document.querySelector('.loadingUpground').setAttribute('src', 'assets/loading/loadingUpgroundEN.png')
+          } else {
+            localStorage.setItem('codeAlpha', 'es');
           }
           document.querySelector('.loadingUpground').classList.remove('loadingUpground-hidden')
           setTimeout(() => {
-            location.href = "/view360/oficina-full/" 
+            location.href = "/view360/oficina-full/"
           }, 1500)
         });
     }

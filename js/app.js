@@ -5,6 +5,15 @@ if (document.getElementById("cardModal")) {
   });
 }
 
+if (localStorage.getItem("codeAlpha") == "es") {
+  document
+    .querySelector("a-scene")
+    .setAttribute(
+      "device-orientation-permission-ui",
+      "denyButtonText: Denegar; allowButtonText: Permitir; cancelButtonText: Cancelar; deviceMotionMessage: Para un experiencia más inmersiva este sitio web requiere permiso para el uso de sus sensores de moviendo."
+    );
+}
+
 // funcion de A-frame para la creacion de atributos personales.
 // se crea un atributo que permite llamar una funcion al dar click a cualquier
 // objeto con el atributo "pick"
@@ -68,14 +77,17 @@ function howNavigate() {
   myModal.show();
 }
 
-codeAlpha = "es";
-
 // funcion Geolocalizacion
+
+codeAlpha = "es";
+country = "CO";
+
 fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
+    country = data.country;
     if (data.country == "US") {
       codeAlpha = "en";
       document.getElementById("sala-ventas-menu").style.display = "none";
@@ -83,9 +95,6 @@ fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
       document
         .getElementById("howControlsImg")
         .setAttribute("src", "../assets/extras/HowNavEN.png");
-      document
-        .querySelector("a-scene")
-        .setAttribute("device-orientation-permission-ui", "denyButtonText: Denegar; allowButtonText: Permitir; cancelButtonText: Cancelar; deviceMotionMessage: Para un experiencia más inmersiva este sitio web requiere permiso para el uso de sus sensores de moviendo.");
     }
 
     fetch("../assets/text.json")
@@ -99,6 +108,12 @@ fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
           element.innerHTML = jsondata[codeAlpha][params[0]][params[1]];
         });
       });
+
+    whatsapp = document.getElementById("whatsapp");
+    whatsapp.setAttribute(
+      "href",
+      getLinkWhatsApp(whatsapp.getAttribute("panorama"))
+    );
   });
 
 // funcion para obtener data de Json
@@ -121,26 +136,49 @@ function setInfoCard(cardType, panorama) {
 function getLinkWhatsApp(panorama) {
   url = "https://api.whatsapp.com/send/?";
   texto =
-    "&text=Hola+E+Containers+tengo+una+idea+genial+y+quiero+hacerla+realidad&app_absent=0";
+    "&text=Hola%20E%20Containers%20tengo%20una%20idea%20genial%20y%20quiero%20hacerla%20realidad&app_absent=0";
   telefono = "";
-  if (
-    panorama == "oficinaFull" ||
-    panorama == "oficinaSencilla" ||
-    panorama == "salaVentas"
-  ) {
-    telefono = "phone=573116394356";
-    return url + telefono + texto;
-  } else if (panorama == "refeer") {
-    telefono = "phone=573103617492";
-    return url + telefono + texto;
+  if (country == "CO") {
+    if (
+      panorama == "oficinaFull" ||
+      panorama == "oficinaSencilla" ||
+      panorama == "salaVentas"
+    ) {
+      telefono = "phone=573116394356";
+      return url + telefono + texto;
+    } else if (panorama == "refeer") {
+      telefono = "phone=573103617492";
+      return url + telefono + texto;
+    }
+  } else if (country == "US") {
+    texto =
+      "&text=Hi%20E%20Containers,%20I%20am%20interested%20in%20buying%20or%20renting%20maritime%20containers&app_absent=0";
+    if (
+      panorama == "oficinaFull" ||
+      panorama == "oficinaSencilla" ||
+      panorama == "salaVentas"
+    ) {
+      telefono = "phone=17866059094";
+      return url + telefono + texto;
+    } else if (panorama == "refeer") {
+      telefono = "phone=573164650177";
+      return url + telefono + texto;
+    }
+  } else if (country == "EC") {
+    if (
+      panorama == "oficinaFull" ||
+      panorama == "oficinaSencilla" ||
+      panorama == "salaVentas"
+    ) {
+      telefono = "phone=59323420031";
+      return url + telefono + texto;
+    } else if (panorama == "refeer") {
+      telefono = "phone=59323420031";
+      return url + telefono + texto;
+    }
   }
 }
 
-whatsapp = document.getElementById("whatsapp");
-whatsapp.setAttribute(
-  "href",
-  getLinkWhatsApp(whatsapp.getAttribute("panorama"))
-);
 // if (AFRAME.utils.device.isMobile()) {
 //   window.scroll(60, 0);
 // }
