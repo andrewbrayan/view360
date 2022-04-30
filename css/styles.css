@@ -46,7 +46,8 @@ body {
 }
 
 .navTitle {
-  font-family: "Brandon Text Bold", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  width: min-content;
 }
 
 .texts {
@@ -133,11 +134,13 @@ p {
   background-image: url("../assets/loading/loadingBackground.png");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 678px) {
   .loadingUpground {
-    height: 70% !important;
+    height: auto !important;
+    width: 100%;
   }
 }
 
