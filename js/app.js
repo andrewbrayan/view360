@@ -18,26 +18,6 @@ if (localStorage.getItem("codeAlpha") == "es") {
 // se crea un atributo que permite llamar una funcion al dar click a cualquier
 // objeto con el atributo "pick"
 
-AFRAME.registerComponent("pick", {
-  init: function () {
-    this.el.addEventListener("click", () => {
-      setInfoCard(
-        this.el.getAttribute("infoCard"),
-        this.el.getAttribute("panorama")
-      );
-      myModal.show();
-    });
-  },
-});
-
-AFRAME.registerComponent("close", {
-  init: function () {
-    this.el.addEventListener("click", () => {
-      myModal.hide();
-    });
-  },
-});
-
 mouseOver = false;
 window.addEventListener("mouseover", (event) => {
   if (event.target.localName == "canvas") {
