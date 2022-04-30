@@ -85,7 +85,7 @@ fetch("https://us-central1-econtainers2019.cloudfunctions.net/geojs-country")
         .setAttribute("src", "../assets/extras/HowNavEN.png");
       document
         .querySelector("a-scene")
-        .setAttribute("device-orientation-permission-ui", "");
+        .setAttribute("device-orientation-permission-ui", "denyButtonText: Denegar; allowButtonText: Permitir; cancelButtonText: Cancelar; deviceMotionMessage: Para un experiencia más inmersiva este sitio web requiere permiso para el uso de sus sensores de moviendo.");
     }
 
     fetch("../assets/text.json")

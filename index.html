@@ -12,8 +12,7 @@
 <body>
   <!-- Loading -->
   <div id="loading" class="loading">
-    <img class="loadingBackground" src="assets/loading/loadingBackground.jpg" alt="Econtainers">
-    <img class="loadingUpground" src="assets/loading/loadingUpground.png" alt="Econtainers">
+    <img class="loadingUpground loadingUpground-hidden" src="assets/loading/loadingUpground.png" alt="Econtainers">
   </div>
 
   <script>
@@ -28,9 +27,10 @@
           if (data.country == "US") {
             document.querySelector('.loadingUpground').setAttribute('src', 'assets/loading/loadingUpgroundEN.png')
           }
+          document.querySelector('.loadingUpground').classList.remove('loadingUpground-hidden')
           setTimeout(() => {
-            location.href = "/360/oficina-full/"
-          }, 2000)
+            location.href = "/360/oficina-full/" 
+          }, 3000)
         });
     }
   </script>
